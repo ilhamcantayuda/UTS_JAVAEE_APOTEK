@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 14, 2016 1:47:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="klinik" name="EntityObat.Obat" optimistic-lock="version" table="obat">
+    <id name="kdObat" type="string">
+      <column length="10" name="kd_obat"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nmObat" type="string">
+      <column length="25" name="nm_obat"/>
+    </property>
+    <property name="jenisobat" type="string">
+      <column length="7" name="jenisobat" not-null="true"/>
+    </property>
+    <property name="tglkadaluarsa" type="string">
+      <column length="14" name="tglkadaluarsa" not-null="true"/>
+    </property>
+    <property name="harga" type="string">
+      <column length="14" name="harga" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 14, 2016 1:47:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="klinik" name="EntityPasien.Pasien" optimistic-lock="version" table="pasien">
+    <id name="kdPasien" type="string">
+      <column length="4" name="kd_pasien"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nmPasien" type="string">
+      <column length="20" name="nm_pasien" not-null="true"/>
+    </property>
+    <property name="jeniskelamin" type="string">
+      <column length="12" name="jeniskelamin" not-null="true"/>
+    </property>
+    <property name="up" type="string">
+      <column length="22" name="up" not-null="true"/>
+    </property>
+    <property name="alamat" type="string">
+      <column length="50" name="alamat" not-null="true"/>
+    </property>
+    <property name="tlp" type="string">
+      <column length="12" name="tlp" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

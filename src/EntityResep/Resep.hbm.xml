@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 14, 2016 1:47:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="klinik" name="EntityResep.Resep" optimistic-lock="version" table="resep">
+    <id name="index" type="int">
+      <column name="index"/>
+      <generator class="identity"/>
+    </id>
+    <property name="kdResep" type="string">
+      <column length="4" name="kd_resep" not-null="true"/>
+    </property>
+    <property name="kdDokter" type="string">
+      <column length="4" name="kd_dokter" not-null="true"/>
+    </property>
+    <property name="kdPasien" type="string">
+      <column length="4" name="kd_pasien" not-null="true"/>
+    </property>
+    <property name="jp" type="string">
+      <column length="22" name="jp" not-null="true"/>
+    </property>
+    <property name="tglresep" type="string">
+      <column length="14" name="tglresep" not-null="true"/>
+    </property>
+    <property name="kdObat" type="string">
+      <column length="4" name="kd_obat"/>
+    </property>
+  </class>
+</hibernate-mapping>
